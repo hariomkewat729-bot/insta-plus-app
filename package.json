@@ -1,13 +1,18 @@
 {
   "name": "insta-plus-app",
   "version": "1.0.0",
-  "description": "Instagram जैसा ऐप - Insta Plus",
+  "description": "Instagram जैसा Photo & Video Sharing Application - Insta Plus",
   "private": true,
+  "homepage": "https://github.com/hariomkewat729-bot/insta-plus-app",
+  "author": "Your Name",
+  "license": "MIT",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.8.0",
-    "axios": "^1.3.0",
+    "axios": "^1.3.0"
+  },
+  "devDependencies": {
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
@@ -33,5 +38,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "keywords": [
+    "instagram",
+    "social-media",
+    "photo-sharing",
+    "react",
+    "insta-plus"
+  ]
 }

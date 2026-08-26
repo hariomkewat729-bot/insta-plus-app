@@ -1,0 +1,143 @@
+.post {
+  background: #fff;
+  border: 1px solid #dbdbdb;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  border-bottom: 1px solid #efefef;
+}
+
+.post-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 12px;
+  object-fit: cover;
+}
+
+.post-user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.post-username {
+  font-weight: 600;
+  color: #000;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.post-username:hover {
+  color: #0095f6;
+}
+
+.post-time {
+  font-size: 12px;
+  color: #999;
+}
+
+.post-image {
+  width: 100%;
+  background: #f0f0f0;
+}
+
+.post-image img {
+  width: 100%;
+  max-height: 600px;
+  object-fit: cover;
+  display: block;
+}
+
+.post-actions {
+  display: flex;
+  gap: 16px;
+  padding: 8px 16px;
+}
+
+.action-btn {
+  font-size: 20px;
+  color: #000;
+  transition: all 0.3s;
+  padding: 8px;
+}
+
+.action-btn:hover {
+  color: #0095f6;
+  transform: scale(1.2);
+}
+
+.action-btn.liked {
+  color: #ed4956;
+}
+
+.post-stats {
+  padding: 8px 16px;
+  font-size: 14px;
+  border-bottom: 1px solid #efefef;
+}
+
+.comments-count {
+  color: #999;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.comments-count:hover {
+  color: #0095f6;
+}
+
+.post-caption {
+  padding: 8px 16px;
+  font-size: 14px;
+}
+
+.post-comments {
+  padding: 12px 16px;
+  border-top: 1px solid #efefef;
+}
+
+.comments-list {
+  max-height: 200px;
+  overflow-y: auto;
+  margin-bottom: 12px;
+}
+
+.comment {
+  font-size: 13px;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.comment-input {
+  display: flex;
+  gap: 8px;
+  border-top: 1px solid #efefef;
+  padding-top: 12px;
+}
+
+.comment-input input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  padding: 8px;
+  background: #f0f0f0;
+  border-radius: 20px;
+  padding-left: 16px;
+}
+
+.comment-input button {
+  background: none;
+  border: none;
+  font-size: 16px;
+  color: #0095f6;
+  cursor: pointer;
+  padding: 8px;
+}

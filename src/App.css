@@ -1,0 +1,36 @@
+.App {
+  min-height: 100vh;
+  background-color: #fafafa;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.main-content {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.feed {
+  flex: 1;
+  max-width: 600px;
+}
+
+.sidebar {
+  flex: 0 0 300px;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    flex: 1;
+    max-width: 100%;
+  }
+}

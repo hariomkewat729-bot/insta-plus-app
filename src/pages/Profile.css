@@ -1,0 +1,124 @@
+.profile-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.profile-header {
+  background: white;
+  border: 1px solid #dbdbdb;
+  border-radius: 8px;
+  padding: 30px;
+  display: flex;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.profile-avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.profile-info {
+  flex: 1;
+}
+
+.profile-info h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.profile-bio {
+  color: #666;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.profile-stats {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 20px;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat strong {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.stat span {
+  color: #666;
+  font-size: 14px;
+}
+
+.follow-btn {
+  padding: 10px 30px;
+  background: #0095f6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.follow-btn:hover {
+  background: #0074cc;
+}
+
+.follow-btn.following {
+  background: #dbdbdb;
+  color: #000;
+}
+
+.follow-btn.following:hover {
+  background: #b3b3b3;
+}
+
+.profile-posts {
+  background: white;
+  border: 1px solid #dbdbdb;
+  border-radius: 8px;
+  padding: 30px;
+}
+
+.profile-posts h2 {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.no-posts {
+  text-align: center;
+  color: #999;
+  padding: 40px 20px;
+}
+
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .profile-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-stats {
+    justify-content: center;
+  }
+
+  .posts-grid {
+    grid-template-columns: 1fr;
+  }
+}
